@@ -1,0 +1,29 @@
+theme = "ayu_dark"
+
+[keys.normal]
+n = "move_next_word_start"
+L = ["ensure_selections_forward", "extend_to_line_end"]
+
+[keys.normal.w]
+w = ":write"
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+
+[keys.select]
+u = ":reset-diff-change"
+n = "move_next_word_start"
+
+[editor]
+scrolloff = 10
+color-modes = true
+
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+center = ["version-control"]
+[editor.cursor-shape]
+insert = "bar"
+
